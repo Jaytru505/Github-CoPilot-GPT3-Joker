@@ -1,0 +1,65 @@
+<!-- Setup HTML page --> 
+<html>
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<!-- add title and description-->
+<div class="jumbotron text-center">
+  <h1>GPT-3 Joke Generator</h1>
+  <p>A simple starter project for learning how to use GitHUb CoPilot. Here GPT-3 is used to generate jokes by famous comedians. This project was >80% written by GitHub CoPilot by supplying comments and accepting inline reccomendations by Copilot.</p> 
+  <p>Read more on my blog or checkout my podcast!</p>
+<!-- button to generate joke-->
+<button type="button" class="btn btn-primary btn-lg" id="jokerButton" data-toggle="joker" data-target="#jokes">
+  Generate Joke 
+</button>
+<!-- add a loading spinner-->
+<div class="spinner" id="loadingSpinner">
+  <div class="bounce1"></div>
+  <div class="bounce2"></div>
+  <div class="bounce3"></div>
+</div>
+<!-- add a share joke button-->
+<button type="button" class="btn btn-primary btn-lg" id="shareButton" data-toggle="share" data-target="#share">
+  Share Joke
+</button>
+<!-- add a clear jokes button -->
+<button type="button" class="btn btn-primary btn-lg" id="clearButton" data-toggle="clear" data-target="#jokes">
+  Clear Jokes
+</button>
+
+</div>
+
+<!-- row wtih 3 columns-->
+<div class="row">
+<!-- column 1-->
+<div class="col-sm-4">
+    
+</div>
+<!-- column 2-->
+<div class="col-sm-4 text-center" id="jokeContainer">
+    <ul id="jokes"> 
+        <li>This is some pretty funny stuff</li>
+    </ul>
+</div>
+<!-- column 3-->
+<div class="col-sm-4">
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- add index.js script -->
+<script src="./index.js"></script>
+</body>
+</html>
+

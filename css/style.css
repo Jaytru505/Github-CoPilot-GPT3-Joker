@@ -1,0 +1,85 @@
+/** style the #jokes list with icons **/
+#jokes {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#jokes li {
+    border: 1px solid #ccc;
+    margin: 0 0 0 -1px;
+    padding: 0.4em;
+    position: relative;
+}
+#jokes li:hover {
+    background: #eee;
+}
+#jokes li:before {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: -1.5em;
+    border-style: solid;
+    border-width: 0.5em 0.5em 0 0.5em;
+    border-color: transparent #ccc transparent transparent;
+}
+#jokes li:after {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 0;
+    right: -1.5em;
+    border-style: solid;
+    border-width: 0.5em 0 0.5em 0.5em;
+    border-color: transparent transparent transparent #ccc;
+}
+#jokes li.alt {
+    background: #eee;
+}
+#jokes li.alt:before {
+    border-color: transparent transparent transparent #eee;
+}
+#jokes li.alt:after {
+    border-color: transparent #eee transparent transparent;
+}
+#jokes li.alt:hover {
+    background: #ddd;
+}
+#jokes li.alt:hover:before {
+    border-color: transparent transparent transparent #ddd;
+}
+#jokes li.alt:hover:after {
+    border-color: transparent #ddd transparent transparent;
+}
+#jokes li.alt:hover:hover {
+    background: #ccc;
+}
+/** loading spinner **/
+.spinner {
+    display: none;
+    top: 50%;
+    left: 50%;
+    margin: -15px 0 0 -25px;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #ccc;
+    border-radius: 50%;
+    border-top-color: #eee;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/** make buttons 100% width of screen on mobile **/
+@media screen and (max-width: 480px) {
+    .btn {
+        width: 100%;
+        margin: 10px 5px;
+    }
+}
