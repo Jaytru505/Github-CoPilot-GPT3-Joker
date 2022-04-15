@@ -133,7 +133,7 @@ const joke_app = new App({
     joke: "GPT-3 Joker Initalized",
     joke_id: 0,
     loading: false,
-    JOKE_API_URL: "https://us-central1-retweeter.cloudfunctions.net/joker"//"YOUR_FIREBASE_HTTP_ENDPOINT_GOES_HERE"
+    JOKE_API_URL: ""//"YOUR_FIREBASE_HTTP_ENDPOINT_GOES_HERE"
 });
 
 joke_app.initialize();
