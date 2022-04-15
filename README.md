@@ -8,4 +8,4 @@ Next run the npm build command. Finally you can click on the index.html to run t
 
  # Read more
  Learn more about this app, how it was made as well as how to use it at Discourse Digital
- https://discoursedigital.com
+ https://discoursedigital.com/blog/digital-discourse-2/first-opinions-on-github-copilot-my-new-ai-pair-programmer-53
