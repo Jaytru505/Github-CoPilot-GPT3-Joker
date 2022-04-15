@@ -1,6 +1,6 @@
 # Github CoPilot GPT3 Joker
  App written by Github CoPilot extentsion to show jokes inspired by George Carlin and other comedians
- 
+ ![GPT-3 JOKER by Discourse Digital](https://discoursedigital.com/web/image/22248-722fbfdd/gpt3-joker.gif?access_token=896c6c06-e71e-494a-9eff-0f90d083ce76)
 # To Run
 Clone this repo. Next, you need to deploy a firebase function found in the functions folder. 
 Then add this URL to the the JOKE_API_URL property in the bottom of index.ts. 
