@@ -1,11 +1,13 @@
 // Joke generator
 // Randomly generate a joke written by GPT-3 
+// Written 80% by GitHub CoPilot and 20% by the author
+// Author: Discourse Digital; JD Berkowitz; 
+// implement AppProps on App
 class App {
     constructor(props) {
         this.joke = props.joke;
         this.joke_id = props.joke_id;
         this.loading = props.loading;
-        this.error = props.error;
         this.JOKE_API_URL = props.JOKE_API_URL;
     }
     initialize() {
@@ -21,6 +23,7 @@ class App {
         this.shareButtonBind();
         return;
     }
+    // get a new joke from the api
     getJoke() {
         this.loading = true;
         this.loadingSpinner();
@@ -91,11 +94,10 @@ class App {
     }
 }
 const joke_app = new App({
-    joke: "GPT-3 Geroge Carlin Initalized",
+    joke: "GPT-3 Joker Initalized",
     joke_id: 0,
     loading: false,
-    error: "",
-    JOKE_API_URL: "https://us-central1-retweeter.cloudfunctions.net/joker/"
+    JOKE_API_URL: "https://us-central1-retweeter.cloudfunctions.net/joker" //"YOUR_FIREBASE_HTTP_ENDPOINT_GOES_HERE"
 });
 joke_app.initialize();
 //# sourceMappingURL=index.js.map

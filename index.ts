@@ -1,5 +1,7 @@
 // Joke generator
 // Randomly generate a joke written by GPT-3 
+// Written 80% by GitHub CoPilot and 20% by the author
+// Author: Discourse Digital; JD Berkowitz; 
 
 //create an interface for the apiResponseData
 interface Joke {
@@ -27,6 +29,7 @@ interface AppProps {
     JOKE_API_URL: string;
 }
 
+// implement AppProps on App
 class App implements AppProps {
     joke: string;
     joke_id: number;
@@ -53,6 +56,7 @@ class App implements AppProps {
         this.shareButtonBind();
         return
     }
+    // get a new joke from the api
     getJoke(): Promise<any> {
         this.loading = true;
         this.loadingSpinner();
@@ -126,10 +130,10 @@ class App implements AppProps {
 }
 
 const joke_app = new App({
-    joke: "GPT-3 Geroge Carlin Initalized",
+    joke: "GPT-3 Joker Initalized",
     joke_id: 0,
     loading: false,
-    JOKE_API_URL: "https://us-central1-retweeter.cloudfunctions.net/joker/"
+    JOKE_API_URL: "https://us-central1-retweeter.cloudfunctions.net/joker"//"YOUR_FIREBASE_HTTP_ENDPOINT_GOES_HERE"
 });
 
 joke_app.initialize();
